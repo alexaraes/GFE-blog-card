@@ -11,7 +11,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ category, articleTitle, subtitle, cta, imageSrc }: BlogCardProps) => {
     return (
-        <div className="flex flex-col justify-center items-center w-80 rounded-lg border-2 border-neutral-300 bg-white">
+        <div className="flex flex-col mt-[120px] justify-center items-center w-80 rounded-lg border-2 border-neutral-300 bg-white">
             <div>
                 <img src={imageSrc} className="rounded-t-md" />
                 <div className="px-4 pt-5 pb-2">

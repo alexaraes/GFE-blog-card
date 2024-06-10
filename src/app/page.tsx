@@ -11,7 +11,7 @@ const data = {
 export default function Page() {
     const { category, articleTitle, subtitle, cta, imageSrc } = data;
     return (
-        <div className="flex flex-col justify-center items-center h-screen bg-gradient-to-br from-[#f9fafb] to-[#d2d6db]">
+        <div className="flex flex-col items-center h-screen bg-gradient-to-br from-[#f9fafb] to-[#d2d6db]">
             <BlogCard
                 category={category}
                 articleTitle={articleTitle}

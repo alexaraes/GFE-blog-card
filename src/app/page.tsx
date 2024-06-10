@@ -5,7 +5,7 @@ const data = {
     articleTitle: 'Top 5 Living Room Inspirations',
     subtitle: 'Curated vibrants colors for your living, make it pop & calm in the same time.',
     cta: 'Read more',
-    imageSrc: '/spacejoy-YqFz7UMm8qE-unsplash.jpg'
+    imageSrc: 'livingroom.jpg'
 };
 
 export default function Page() {

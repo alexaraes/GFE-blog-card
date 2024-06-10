@@ -1,3 +1,4 @@
+
 import ArrowIcon from './ArrowIcon';
 
 interface BlogCardProps {
@@ -10,20 +11,20 @@ interface BlogCardProps {
 
 const BlogCard = ({ category, articleTitle, subtitle, cta, imageSrc }: BlogCardProps) => {
     return (
-        <div className="flex flex-col justify-center items-center w-72 space-y-1.5 bg-white">
+        <div className="flex flex-col justify-center items-center w-80 rounded-lg drop-shadow-lg bg-white">
             <div>
-                <img src={imageSrc} />
-                <div className="p-3">
-                    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-teal-100 text-teal-800">{category}</span>
+                <img src={imageSrc} className="rounded-t-lg" />
+                <div className="px-4 pt-5 pb-2">
+                    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-4 rounded-full text-xs font-medium bg-green-50 text-green-700 border-solid border-green-200">{category}</span>
                 </div>
-                <div className="text-lg px-3">
+                <div className="text-lg font-semibold text-neutral-900 px-4 py-2">
                     <p>{articleTitle}</p>
                 </div>
-                <div className="text-base text-neutral-600 px-3">
+                <div className="text-base text-neutral-600 px-4">
                     <p>{subtitle}</p>
                 </div>
-                <div className="flex flex-row justify-start items-center p-3">
-                    <a className="text-indigo-700">{cta}</a>
+                <div className="flex flex-row justify-start items-center p-4">
+                    <a className="text-base text-indigo-700">{cta}</a>
                     <ArrowIcon />
                 </div>
             </div>

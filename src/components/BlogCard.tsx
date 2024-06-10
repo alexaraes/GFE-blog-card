@@ -11,11 +11,11 @@ interface BlogCardProps {
 
 const BlogCard = ({ category, articleTitle, subtitle, cta, imageSrc }: BlogCardProps) => {
     return (
-        <div className="flex flex-col justify-center items-center w-80 rounded-lg drop-shadow-lg bg-white">
+        <div className="flex flex-col justify-center items-center w-80 rounded-lg border-2 border-neutral-300 bg-white">
             <div>
-                <img src={imageSrc} className="rounded-t-lg" />
+                <img src={imageSrc} className="rounded-t-md" />
                 <div className="px-4 pt-5 pb-2">
-                    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-4 rounded-full text-xs font-medium bg-green-50 text-green-700 border-solid border-green-200">{category}</span>
+                    <span className="inline-flex items-center gap-x-1.5 py-1.5 px-4 rounded-full text-xs font-medium bg-green-50 text-green-700 border border-green-200">{category}</span>
                 </div>
                 <div className="text-lg font-semibold text-neutral-900 px-4 py-2">
                     <p>{articleTitle}</p>
